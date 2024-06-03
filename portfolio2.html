@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\rupes\OneDrive\Documents\fontawesome-free-5.15.4-web\css/all.min.css">
+    <link rel="stylesheet" href="C:\Users\rupes\OneDrive\Documents\fontawesome-free-5.15.4-web\css/fontawesome.min.css">
+    <link rel="stylesheet" href="portfolio2.css">
+</head>
+
+<body>
+<div class="img">
+    <img class="pic" style=" opacity: 0; z-index: 0;" src="C:\Users\rupes\OneDrive\Documents/html-0001.jpg" alt="">
+    <img class="" style="opacity: 1; z-index: -1;" src="C:\Users\rupes\OneDrive\Pictures/workplace.jpg" alt="">
+</div>
+<div class="img">
+    <img class="pic" style=" opacity:0; z-index: 0; ;" src="C:\Users\rupes\OneDrive\Documents/css.jpg" alt="">
+    <img class="" style=" opacity:1; z-index: -1;" src="C:\Users\rupes\OneDrive\Pictures/image1.jpeg" alt="">
+</div>
+<div class="show">
+    <img class="pic" src="C:\Users\rupes\OneDrive\Documents/html-0001.jpg" alt="">
+   <!--- <img style="opacity: ;" src="C:\Users\rupes\OneDrive\Pictures/workplace.jpg" alt="">-->
+</div>
+
+<script src="C:\Users\rupes\OneDrive\Documents\jquery/jquery.min.js"></script>
+    <script>
+      
+      document.querySelectorAll(".img img").forEach(images=>{
+        images.onclick=()=>{
+            document.querySelector(".show").style.display="block"
+          //document.querySelector(".show img").src=images.getAttribute("src")
+            document.querySelector(".show img").src=images.getAttribute("src")
+        }
+      })
+      
+      
+    </script>
+</body>
+</html>
